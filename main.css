@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Quicksand&family=Turret+Road:wght@800&display=swap');
+
+/**
+    font-family: 'Baloo Chettan 2', cursive;
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-family: 'Turret Road', cursive;
+**/
+
+html {
+    height: 100vh;
+    width:  100vw;
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    margin: 0px; 
+    padding: 0px;
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: brightness(0.35) blur(5px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+h1, h2 {
+    font-family: 'Turret Road', cursive;
+}
+
+h3, p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    color: rgb(251, 239, 255);
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0.5%;
+}
+
+input {
+    color: white;
+    background: none;
+    border: none;
+    width: 30%;
+    padding-left: 20%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    
+}
+header {
+    padding: 2%;
+    padding-bottom: 0;;
+    text-align: center;
+    font-size: 2.6em;
+    color: rgb(255, 239, 254);
+    text-shadow: 0px 0px 6px rgba(229, 163, 255, 0.959), 0px 0px 15px rgba(218, 126, 255, 0.959), 0px 0px 18px rgba(209, 94, 255, 0.959);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 18%;
+}
+
+.location, .click {
+    background-color: rgba(21, 4, 51, 0.411);
+    border-radius: 30px;
+    width: 80%;
+    height: auto;
+    min-height: 15%;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.location h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.4em;
+    margin: 0.3em;
+    margin-bottom: -0.1em;
+}
+
+.location h3 {
+    color: white;
+    padding-left: 5%;
+    font-size: 1.4em;
+}
+
+.location1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: space-around;
+}
+
+.location2 {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+
+.click {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.button {
+    background-color: rgba(238, 219, 250, 0.123);
+    border-radius: 16px;
+    border-color: rgba(249, 247, 255, 0);
+    border-style: solid;
+    border-width: 2px;
+    min-width: 50%;
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+}
+
+.click h2 {
+    color: white;
+    width: 100%;
+    letter-spacing: 0.15em;
+    font-size: 3.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+}
+
+.material-icons {
+    font-size: 60px;
+    color:rgba(241, 221, 255, 0.623);
+}
+
+footer p {
+    font-size: 0.9em;
+}
+button:hover {
+    border-color: rgba(249, 247, 255, 0.397);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.title:hover {
+    animation: title-shadow-change 3000ms infinite linear;
+}
+  
+@keyframes title-shadow-change {
+    0% {
+        text-shadow: 0px 0px 6px rgba(229, 163, 255, 0.959), 0px 0px 15px rgba(218, 126, 255, 0.959), 0px 0px 18px rgba(209, 94, 255, 0.959);
+    }
+
+    25% {
+        text-shadow: 0px 0px 6px rgba(192, 164, 255, 0.959), 0px 0px 15px rgba(135, 126, 255, 0.959), 0px 0px 18px rgba(142, 94, 255, 0.959);
+    }
+
+    50% {
+        text-shadow: 0px 0px 6px rgba(164, 241, 255, 0.959), 0px 0px 15px rgba(126, 240, 255, 0.959), 0px 0px 18px rgba(94, 231, 255, 0.959);
+    }
+
+    75% {
+        text-shadow: 0px 0px 6px rgba(192, 164, 255, 0.959), 0px 0px 15px rgba(135, 126, 255, 0.959), 0px 0px 18px rgba(142, 94, 255, 0.959);
+    }
+
+    100% {
+        text-shadow: 0px 0px 6px rgba(229, 163, 255, 0.959), 0px 0px 15px rgba(218, 126, 255, 0.959), 0px 0px 18px rgba(209, 94, 255, 0.959);
+    }
+}
+
+.click:hover, .location:hover {
+    animation: click-location-shadow-change 4000ms infinite linear;
+  }
+  
+@keyframes click-location-shadow-change {
+    0% {
+        box-shadow: 0px 0px 15px rgba(183, 138, 255, 0.966);
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px rgba(218, 126, 255, 0.959), 0px 0px 18px rgba(209, 94, 255, 0.959);
+    }
+
+    100% {
+        box-shadow: 0px 0px 15px rgba(186, 126, 255, 0.959);
+    }
+}
+
+.click h2:hover {
+    animation: text-gradient 4000ms infinite linear;
+    text-shadow: 0px 0px 1px rgb(255, 254, 251);
+  }
+  
+@keyframes text-gradient {
+    0% {
+        color: white;
+    }
+
+    25% {
+        color: rgb(246, 228, 255);
+    }
+
+    50% {
+        color: rgb(229, 220, 255);
+    }
+
+    75% {
+        color: rgb(252, 238, 255);
+    }
+
+    100% {
+        color: white;
+    }
+  }
+
+
+@media (min-width: 590px) {
+    .location, .click {
+        max-width: 60%;
+    }
+}
+ 
+@media (min-width: 850px) {
+    .location, .click {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .location, .click {
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .location, .click {
+        max-width: 30%;
+    }
+}

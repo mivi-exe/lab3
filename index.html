@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mouse Events</title>
+    <script src="index.js"></script> 
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+<body onmousemove="coordinate(event)">
+    <header>
+        <h1 class="title">Mouse Events</h1>
+    </header>
+
+    <main>
+      <section class="click">
+        <button class="button" onmousedown="myfunc(event)"><h2 class="click-h2">Click Me</h2></button>
+        <p class="click-p">Left click for something naughty</p>
+        <i class="material-icons">nights_stay</i>
+        <p class="click-p">Right click for something nice</p>
+      </section>
+
+      <section class="location">
+          <h2 class="location-h2">Pointer Location</h2>
+          <section class="location1">
+            <section class="location2">
+              <h3 class="location-h3">X: </h3>
+              <input type="text" id="x">
+            </section>
+            <section class="location2">
+              <h3 class="location-h3">Y: </h3>
+              <input type="text" id="y">
+            </section>
+          </section>
+      </section>
+
+  </main>
+  <footer>
+    <p>A goofy website by Misha</p>
+  </footer> 
+</body>
+</html>
